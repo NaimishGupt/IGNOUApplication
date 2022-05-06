@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.Activity.Activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/lock_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/lock_image"
+        android:padding="8dp"
+        android:src="@drawable/img_1" />
+<androidx.cardview.widget.CardView
+  android:layout_centerInParent="true"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="20dp"
+    android:layout_height="wrap_content"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="6dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:padding="8dp"
+            android:src="@drawable/img"
+            android:contentDescription="@string/google_image" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_with_google"
+            android:layout_gravity="center_vertical"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="45dp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/skip_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/guest_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="45dp"
+        android:text="Skip Login"
+        android:textSize="20sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/guest_user"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="55dp"
+        app:cardElevation="6dp"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_arrow_forward_24" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
